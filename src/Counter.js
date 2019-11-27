@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-function App() {
+function Counter() {
   const [count, setCount] = useState(0);
   const increment = () => setCount(count + 1);
   return <button onClick={increment}>{count}</button>;
 }
 
-export default App;
+export default Counter;
