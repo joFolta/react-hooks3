@@ -5,17 +5,17 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 
 *!!NOTE!!: projects separated by branches off master*
 ---
-| Branch                                | Video Name                  |
-| ------------------------------------- | --------------------------- |
-| Vid1-Use-the-useState-React-Hook      | Use the useState React Hook |
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 1      | Use the useState React Hook             | Vid1-Use-the-useState-React-Hook |
 
 ![Preview](/public/vid1.png)
 ---
-| Branch                                | Video Name                  |
-| ------------------------------------- | --------------------------- |
-| Vid1-Use-the-useState-React-Hook      | Use the useState React Hook |
+| Branch                                           | Video Name                  |
+| -------------------------------------            | --------------------------- |
+| Vid2-Test-React-Components-that-use-React-Hooks  | Use the useState React Hook |
 
-![Preview](/public/vid1.png)
+![Preview](/public/vid2.png)
 
 
 
