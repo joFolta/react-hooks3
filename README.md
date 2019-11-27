@@ -2,7 +2,7 @@
 
 ![Preview](/public/preview.png)
 
-**NOTE: projects separated by branches off master**
+**!!NOTE!!: projects separated by branches off master**
 
 Video 1: Use the useState React Hook
 
