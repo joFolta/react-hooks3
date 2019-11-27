@@ -22,7 +22,12 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 | 3      | Share Logic Across Multiple React Components with Custom Hooks | Vid3-Share-Logic-with-Custom-Hooks |
 
 ![Preview](/public/vid3.png)
+---
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 4      | Store Values in localStorage with the React useEffect Hook | Vid4-Store-Values-with-useEffect-Hook |
 
+![Preview](/public/vid4.png)
 
 
 
