@@ -16,6 +16,12 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 | 2      | Test React Components that use React Hooks | Vid2-Test-React-Components-that-use-React-Hooks |
 
 ![Preview](/public/vid2.png)
+---
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 3      | Share Logic Across Multiple React Components with Custom Hooks | Vid3-Share-Logic-with-Custom-Hooks |
+
+![Preview](/public/vid3.png)
 
 
 
