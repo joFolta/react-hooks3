@@ -4,11 +4,16 @@ Following tutorial: "React Hooks and Suspense"
 https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 
 *!!NOTE!!: projects separated by branches off master*
-
+---
 | Branch                                | Video Name                  |
 | ------------------------------------- | --------------------------- |
 | Vid1-Use-the-useState-React-Hook      | Use the useState React Hook |
 
+![Preview](/public/vid1.png)
+---
+| Branch                                | Video Name                  |
+| ------------------------------------- | --------------------------- |
+| Vid1-Use-the-useState-React-Hook      | Use the useState React Hook |
 
 ![Preview](/public/vid1.png)
 
