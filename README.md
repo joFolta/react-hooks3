@@ -2,11 +2,7 @@
 
 ![Preview](/public/preview.png)
 
-### Testing with **@test-library/react** on "Button that increments by one each click". 
-- `npm install --save-dev @testing-library/react`
-- if no testing file, create testing file
-- and name it something like "Counter.test.js" or place .js file in "\_\_tests\_\_" folder
-- `npm run test`
+### Share Logic Across Multiple React Components with Custom Hooks
 
 **NOTE: projects separated by branches off master**
 
