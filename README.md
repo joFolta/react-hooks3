@@ -2,11 +2,13 @@
 
 ![Preview](/public/preview.png)
 
-### Button that increments by one each click. 
+### Testing with **@test-library/react** on "Button that increments by one each click". 
+- `npm install --save-dev @testing-library/react`
+- if no testing file, create testing file
+- and name it something like "Counter.test.js" or place .js file in "\_\_tests\_\_" folder
+- `npm run test`
 
 **NOTE: projects separated by branches off master**
-
-Video 1: Use the useState React Hook
 
 Following tutorial: "React Hooks and Suspense"
 https://egghead.io/playlists/react-hooks-and-suspense-650307f2
