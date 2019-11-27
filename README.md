@@ -11,9 +11,9 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 
 ![Preview](/public/vid1.png)
 ---
-| Branch                                           | Video Name                  |
-| -------------------------------------            | --------------------------- |
-| Vid2-Test-React-Components-that-use-React-Hooks  | Use the useState React Hook |
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 2      | Test React Components that use React Hooks | Vid2-Test-React-Components-that-use-React-Hooks |
 
 ![Preview](/public/vid2.png)
 
