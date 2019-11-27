@@ -2,7 +2,7 @@
 
 ![Preview](/public/preview.png)
 
-### Share Logic Across Multiple React Components with Custom Hooks
+### Store Values in localStorage with the React useEffect Hook
 
 **NOTE: projects separated by branches off master**
 
