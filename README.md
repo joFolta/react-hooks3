@@ -1,6 +1,7 @@
 # react-hooks3
 
 ![Preview](/public/preview.png)
+Button that increments by one each click. 
 
 **NOTE: projects separated by branches off master**
 
