@@ -3,8 +3,11 @@
 ![Preview](/public/preview.png)
 
 *!!NOTE!!: projects separated by branches off master*
-**Branch**                                **Video Name**
-Vid1-Use-the-useState-React-Hook          Use the useState React Hook
+
+| Branch                                | Video Name                  |
+| ------------------------------------- | --------------------------- |
+| Vid1-Use-the-useState-React-Hook      | Use the useState React Hook |
+
 
 Following tutorial: "React Hooks and Suspense"
 https://egghead.io/playlists/react-hooks-and-suspense-650307f2
