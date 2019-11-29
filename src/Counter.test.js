@@ -2,6 +2,11 @@ import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import Counter from "./Counter";
 
+//resets after each test
+afterEach(() => {
+  window.localStorage.removeItem("count");
+});
+
 test("counter increments the count", () => {
   const { container } = render(<Counter />);
   const button = container.firstChild;
@@ -18,10 +23,9 @@ test("reads and writes to localStorage", () => {
   fireEvent.click(button);
   expect(window.localStorage.getItem("count")).toBe("4");
   expect(button.textContent).toBe("4");
-  // window.localStorage.removeItem("count");   //clean up localStorage 'count' for future tests
 });
 
-// this test fails b/c the reset above is commented out (button.textContent is still '4')
+// this test passes b/c afterEach at the top
 test("another test...", () => {
   const { container } = render(<Counter />);
   const button = container.firstChild;
