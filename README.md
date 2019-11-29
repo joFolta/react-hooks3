@@ -28,6 +28,12 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 | 4      | Store Values in localStorage with the React useEffect Hook | Vid4-Store-Values-with-useEffect-Hook |
 
 ![Preview](/public/vid4.png)
+---
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 5      | Test Effects Generated from React the useEffect Hook | Vid5-Test-Effects-useEffect-Hook |
+
+![Preview](/public/vid5.png)
 
 
 
