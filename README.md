@@ -2,7 +2,7 @@
 
 ![Preview](/public/preview.png)
 
-### Store Values in localStorage with the React useEffect Hook
+### Test Effects Generated from React the useEffect Hook
 
 **NOTE: projects separated by branches off master**
 
