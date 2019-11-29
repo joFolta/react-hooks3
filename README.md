@@ -1,39 +1,15 @@
 # react-hooks3
 
+![Preview](/public/preview.png)
+
+### Access and Modify a DOM Node with the React useRef and useEffect Hooks
+
+**NOTE: projects separated by branches off master**
+
 Following tutorial: "React Hooks and Suspense"
 https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 
-*!!NOTE!!: projects separated by branches off master*
----
-| Number | Video Name                              |  Branch
-| -------| ------------------------------          | ---------------------------      | 
-| 1      | Use the useState React Hook             | Vid1-Use-the-useState-React-Hook |
 
-![Preview](/public/vid1.png)
----
-| Number | Video Name                              |  Branch
-| -------| ------------------------------          | ---------------------------      | 
-| 2      | Test React Components that use React Hooks | Vid2-Test-React-Components-that-use-React-Hooks |
-
-![Preview](/public/vid2.png)
----
-| Number | Video Name                              |  Branch
-| -------| ------------------------------          | ---------------------------      | 
-| 3      | Share Logic Across Multiple React Components with Custom Hooks | Vid3-Share-Logic-with-Custom-Hooks |
-
-![Preview](/public/vid3.png)
----
-| Number | Video Name                              |  Branch
-| -------| ------------------------------          | ---------------------------      | 
-| 4      | Store Values in localStorage with the React useEffect Hook | Vid4-Store-Values-with-useEffect-Hook |
-
-![Preview](/public/vid4.png)
----
-| Number | Video Name                              |  Branch
-| -------| ------------------------------          | ---------------------------      | 
-| 5      | Test Effects Generated from React the useEffect Hook | Vid5-Test-Effects-useEffect-Hook |
-
-![Preview](/public/vid5.png)
 
 
 
