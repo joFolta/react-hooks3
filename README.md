@@ -34,7 +34,12 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 | 5      | Test Effects Generated from React the useEffect Hook | Vid5-Test-Effects-useEffect-Hook |
 
 ![Preview](/public/vid5.png)
+---
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 6      | Access and Modify a DOM Node with the React useRef and useEffect Hooks | Vid6-AccessAndModify-DomNode-with-useRef-useEffect |
 
+![Preview](/public/vid6.png)
 
 
 
