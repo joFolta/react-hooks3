@@ -58,7 +58,12 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 | 9 (setState/useReducer Stopwatch)      | Simplify a Component Reducer with the React setState Hook | Vid9-Simplify-Reducer-with-setState-Hook |
 
 ![Preview](/public/vid9.png)
+---
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 10 (x2 Stopwatches)      | Share Complex Logic across React Components with Custom Hooks | Vid10-ShareComplexLogic-across-Compnts-w-Custom-Hooks |
 
+![Preview](/public/vid10.png)
 
 
 
