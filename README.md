@@ -46,7 +46,12 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 | 7 (Stopwatch)      | Interact and Update State in React with useState | Vid7-InteractUpdateState-with-useState |
 
 ![Preview](/public/vid7.png)
+---
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 8 (useReducer Stopwatch)      | Declaratively Interact with Complex Component State using the React useReducer Hook | Vid8-DeclarativelyInt-ComplexCompState-using-useReducer |
 
+![Preview](/public/vid8.png)
 
 
 
