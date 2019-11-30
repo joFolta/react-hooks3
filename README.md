@@ -2,7 +2,7 @@
 
 ![Preview](/public/preview.png)
 
-### Simplify a Component Reducer with the React setState Hook
+### Share Complex Logic across React Components with Custom Hooks
 
 **NOTE: projects separated by branches off master**
 

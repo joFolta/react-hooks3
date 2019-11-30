@@ -1,36 +1,10 @@
 import React, { useReducer, useRef, useEffect } from "react";
 
-// useReducer on it's own is overkill for the simple states in this app
-// Simplify with setState (replacing dispatch)
-
-// function reducer(state, action) {
 function reducer(currentState, newState) {
-  // merging current and new states, similar to useState for class components
   return { ...currentState, ...newState };
-  // switch (action.type) {
-  //   case "LAPSE":
-  //     return {
-  //       ...state,
-  //       lapse: roundToTenth(action.now - action.startTime)
-  //     };
-  //   case "TOGGLE_RUNNING":
-  //     return {
-  //       ...state,
-  //       running: !state.running
-  //     };
-  //   case "CLEAR":
-  //     return {
-  //       ...state,
-  //       lapse: 0,
-  //       running: false
-  //     };
-  //   default:
-  //     return state;
-  // }
 }
 
-function Stopwatch() {
-  // const [{ running, lapse }, dispatch] = useReducer(reducer, {
+function useStopWatch() {
   const [{ running, lapse }, setState] = useReducer(reducer, {
     running: false,
     lapse: 0
@@ -47,32 +21,48 @@ function Stopwatch() {
     } else {
       const startTime = msToSec(Date.now()) - lapse;
       intervalRef.current = setInterval(() => {
-        // setLapse(roundToTenth(msToSec(Date.now()) - startTime));
-        // dispatch({
-        //   type: "LAPSE",
-        //   now: msToSec(Date.now()),
-        //   startTime
-        // });
         setState({ lapse: roundToTenth(msToSec(Date.now()) - startTime) });
       }, 0);
     }
-    // dispatch({ type: "TOGGLE_RUNNING" });
     setState({ running: !running });
   }
 
   function handleClearClick() {
     clearInterval(intervalRef.current);
-    // dispatch({ type: "CLEAR" });
     setState({ lapse: 0, running: false });
   }
 
+  return { lapse, running, handleRunClick, handleClearClick };
+}
+
+function Stopwatch() {
+  const stopwatchOne = useStopWatch();
+  const stopwatchTwo = useStopWatch();
+
   return (
     <div>
-      <label style={{ fontSize: "5em", display: "block" }}>{lapse} secs</label>
-      <button onClick={handleRunClick} style={buttonStyles}>
-        {running ? "Stop" : "Start"}
+      <label style={{ fontSize: "5em", display: "block" }}>
+        {stopwatchOne.lapse} secs
+      </label>
+      <button onClick={stopwatchOne.handleRunClick} style={buttonStyles}>
+        {stopwatchOne.running ? "Stop" : "Start"}
       </button>
-      <button onClick={handleClearClick} style={buttonStyles}>
+      <button onClick={stopwatchOne.handleClearClick} style={buttonStyles}>
+        Clear
+      </button>
+
+      <hr />
+      <strong>Lapse Difference: </strong>
+      <span>{stopwatchOne.lapse - stopwatchTwo.lapse} secs</span>
+      <hr />
+
+      <label style={{ fontSize: "5em", display: "block" }}>
+        {stopwatchTwo.lapse} secs
+      </label>
+      <button onClick={stopwatchTwo.handleRunClick} style={buttonStyles}>
+        {stopwatchTwo.running ? "Stop" : "Start"}
+      </button>
+      <button onClick={stopwatchTwo.handleClearClick} style={buttonStyles}>
         Clear
       </button>
     </div>
