@@ -40,7 +40,12 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 | 6      | Access and Modify a DOM Node with the React useRef and useEffect Hooks | Vid6-AccessAndModify-DomNode-with-useRef-useEffect |
 
 ![Preview](/public/vid6.png)
+---
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 7 (Stopwatch)      | Interact and Update State in React with useState | Vid7-InteractUpdateState-with-useState |
 
+![Preview](/public/vid7.png)
 
 
 
