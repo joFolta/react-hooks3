@@ -2,7 +2,7 @@
 
 ![Preview](/public/preview.png)
 
-### Declaratively Interact with Complex Component State using the React useReducer Hook
+### Simplify a Component Reducer with the React setState Hook
 
 **NOTE: projects separated by branches off master**
 

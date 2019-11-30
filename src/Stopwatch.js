@@ -1,37 +1,37 @@
 import React, { useReducer, useRef, useEffect } from "react";
 
-// useReducer
-//   -reduces useState usage;
-//   -you don't need multiple instances of useState for every item of the component
-//   -An alternative to useState.
-//   -useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values. It also lets you optimize performance for components that trigger deep updates
-//    because you can pass >dispatch< down instead of callbacks.
+// useReducer on it's own is overkill for the simple states in this app
+// Simplify with setState (replacing dispatch)
 
-function reducer(state, action) {
-  switch (action.type) {
-    case "LAPSE":
-      return {
-        ...state,
-        lapse: roundToTenth(action.now - action.startTime)
-      };
-    case "TOGGLE_RUNNING":
-      return {
-        ...state,
-        running: !state.running
-      };
-    case "CLEAR":
-      return {
-        ...state,
-        lapse: 0,
-        running: false
-      };
-    default:
-      return state;
-  }
+// function reducer(state, action) {
+function reducer(currentState, newState) {
+  // merging current and new states, similar to useState for class components
+  return { ...currentState, ...newState };
+  // switch (action.type) {
+  //   case "LAPSE":
+  //     return {
+  //       ...state,
+  //       lapse: roundToTenth(action.now - action.startTime)
+  //     };
+  //   case "TOGGLE_RUNNING":
+  //     return {
+  //       ...state,
+  //       running: !state.running
+  //     };
+  //   case "CLEAR":
+  //     return {
+  //       ...state,
+  //       lapse: 0,
+  //       running: false
+  //     };
+  //   default:
+  //     return state;
+  // }
 }
 
 function Stopwatch() {
-  const [{ running, lapse }, dispatch] = useReducer(reducer, {
+  // const [{ running, lapse }, dispatch] = useReducer(reducer, {
+  const [{ running, lapse }, setState] = useReducer(reducer, {
     running: false,
     lapse: 0
   });
@@ -48,22 +48,22 @@ function Stopwatch() {
       const startTime = msToSec(Date.now()) - lapse;
       intervalRef.current = setInterval(() => {
         // setLapse(roundToTenth(msToSec(Date.now()) - startTime));
-        dispatch({
-          type: "LAPSE",
-          now: msToSec(Date.now()),
-          startTime
-        });
+        // dispatch({
+        //   type: "LAPSE",
+        //   now: msToSec(Date.now()),
+        //   startTime
+        // });
+        setState({ lapse: roundToTenth(msToSec(Date.now()) - startTime) });
       }, 0);
     }
-    // setRunning(!running);
-    dispatch({ type: "TOGGLE_RUNNING" });
+    // dispatch({ type: "TOGGLE_RUNNING" });
+    setState({ running: !running });
   }
 
   function handleClearClick() {
     clearInterval(intervalRef.current);
-    // setLapse(0)
-    // setRunning(false);
-    dispatch({ type: "CLEAR" });
+    // dispatch({ type: "CLEAR" });
+    setState({ lapse: 0, running: false });
   }
 
   return (
