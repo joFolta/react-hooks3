@@ -52,7 +52,12 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 | 8 (useReducer Stopwatch)      | Declaratively Interact with Complex Component State using the React useReducer Hook | Vid8-DeclarativelyInt-ComplexCompState-using-useReducer |
 
 ![Preview](/public/vid8.png)
+---
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 9 (setState/useReducer Stopwatch)      | Simplify a Component Reducer with the React setState Hook | Vid9-Simplify-Reducer-with-setState-Hook |
 
+![Preview](/public/vid9.png)
 
 
 
