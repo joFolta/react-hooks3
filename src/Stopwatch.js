@@ -1,12 +1,43 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useReducer, useRef, useEffect } from "react";
+
+// useReducer
+//   -reduces useState usage;
+//   -you don't need multiple instances of useState for every item of the component
+//   -An alternative to useState.
+//   -useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values. It also lets you optimize performance for components that trigger deep updates
+//    because you can pass >dispatch< down instead of callbacks.
+
+function reducer(state, action) {
+  switch (action.type) {
+    case "LAPSE":
+      return {
+        ...state,
+        lapse: roundToTenth(action.now - action.startTime)
+      };
+    case "TOGGLE_RUNNING":
+      return {
+        ...state,
+        running: !state.running
+      };
+    case "CLEAR":
+      return {
+        ...state,
+        lapse: 0,
+        running: false
+      };
+    default:
+      return state;
+  }
+}
 
 function Stopwatch() {
-  const [lapse, setLapse] = useState(0);
-  const [running, setRunning] = useState(false);
+  const [{ running, lapse }, dispatch] = useReducer(reducer, {
+    running: false,
+    lapse: 0
+  });
   const intervalRef = useRef(null);
 
   useEffect(() => {
-    // clear setInterval on unmount (otherwise it'd keep running even after unmount)
     return () => clearInterval(intervalRef.current); // cleanup f(x)
   }, []);
 
@@ -15,18 +46,24 @@ function Stopwatch() {
       clearInterval(intervalRef.current);
     } else {
       const startTime = msToSec(Date.now()) - lapse;
-      // keep track of interval ID with useRef, so that we can clearInterval (on Stop, Clear, or unMount)
       intervalRef.current = setInterval(() => {
-        setLapse(roundToTenth(msToSec(Date.now()) - startTime));
-      }, 0); // setInterval being called as frequently as it possibly can
+        // setLapse(roundToTenth(msToSec(Date.now()) - startTime));
+        dispatch({
+          type: "LAPSE",
+          now: msToSec(Date.now()),
+          startTime
+        });
+      }, 0);
     }
-    setRunning(!running);
+    // setRunning(!running);
+    dispatch({ type: "TOGGLE_RUNNING" });
   }
 
   function handleClearClick() {
     clearInterval(intervalRef.current);
-    setLapse(0);
-    setRunning(false);
+    // setLapse(0)
+    // setRunning(false);
+    dispatch({ type: "CLEAR" });
   }
 
   return (

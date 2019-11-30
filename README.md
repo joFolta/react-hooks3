@@ -2,7 +2,7 @@
 
 ![Preview](/public/preview.png)
 
-### Interact and Update State in React with useState
+### Declaratively Interact with Complex Component State using the React useReducer Hook
 
 **NOTE: projects separated by branches off master**
 
