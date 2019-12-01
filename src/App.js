@@ -1,32 +1,28 @@
-import React, { useRef, useEffect } from "react";
-import VanillaTilt from "vanilla-tilt";
+import React, { useState } from "react";
+import Tilt from "./Tilt";
 
-function Tilt(props) {
-  const tiltRef = useRef();
-  useEffect(() => {
-    VanillaTilt.init(tiltRef.current, {
-      max: 25,
-      speed: 400,
-      glare: true,
-      "max-glare": 0.5
-    });
-    // cleanup fx for unmount
-    return () => tiltRef.current.VanillaTilt.destroy();
-    // onmount (useEffect only runs on mount; AKA no dependencies)
-  }, []);
-  return (
-    <div ref={tiltRef} className="tilt-root">
-      <div className="tilt-child">{props.children}</div>
-    </div>
-  );
+function useToggle(init = false) {
+  const [on, setOn] = useState(init);
+  const toggle = () => setOn(!on);
+  return [on, toggle];
 }
 
 function App() {
+  const [showTilt, toggleTilt] = useToggle();
   return (
-    <div className="totally-centered">
-      <Tilt>
-        <div className="totally-centered">vanilla-tilt</div>
-      </Tilt>
+    <div>
+      <label>
+        show tilt
+        <input type="checkbox" checked={showTilt} onChange={toggleTilt}></input>
+      </label>
+
+      <div className="totally-centered">
+        {showTilt ? (
+          <Tilt>
+            <div className="totally-centered">vanilla-tilt</div>
+          </Tilt>
+        ) : null}
+      </div>
     </div>
   );
 }

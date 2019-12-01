@@ -5,6 +5,9 @@ https://micku7zu.github.io/vanilla-tilt.js/index.html
 body {
   background-color: black;
 }
+label {
+  color: white;
+}
 .tilt-root {
   height: 150px;
   background-color: red;
