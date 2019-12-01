@@ -82,7 +82,13 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 | 13 (revisit VanillaTilt)      | Lazy Load a React Component with React.lazy and Suspense | Vid13-LazyLoad-Comp-w-ReactLazy-and-Suspense |
 
 ![Preview](/public/vid13.png)
+---
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 14 (Pokemon API)      | Learn fundamentals of React Suspense
+ | Vid14-Learn-fundamentals-of-React-Suspense |
 
+![Preview](/public/vid14.png)
 
 
 
