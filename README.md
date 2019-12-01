@@ -2,8 +2,14 @@
 
 ![Preview](/public/preview.png)
 
-### Access and Modify a DOM Node with the React useRef and useEffect Hooks
+### Lazy Load a React Component with React.lazy and Suspense
+React.lazy usage `const Tilt = React.lazy(() => import("./Tilt"))`
+React.lazy needs Suspense
+We give Suspense a fallback prop 
+`<Suspense fallback={<div>loading...</div>}>`
 
+// import Tilt from "./Tilt";
+const Tilt = React.lazy(() => import("./Tilt"));
 **NOTE: projects separated by branches off master**
 
 Following tutorial: "React Hooks and Suspense"

@@ -8,6 +8,9 @@ body {
 label {
   color: white;
 }
+.white {
+  color: white;
+}
 .tilt-root {
   height: 150px;
   background-color: red;
