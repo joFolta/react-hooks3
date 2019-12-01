@@ -85,8 +85,7 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 ---
 | Number | Video Name                              |  Branch
 | -------| ------------------------------          | ---------------------------      | 
-| 14 (Pokemon API)      | Learn fundamentals of React Suspense
- | Vid14-Learn-fundamentals-of-React-Suspense |
+| 14 (Pokemon API)      | Learn fundamentals of React Suspense | Vid14-Learn-fundamentals-of-React-Suspense |
 
 ![Preview](/public/vid14.png)
 
