@@ -70,7 +70,12 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 | 11      | Detect user activity with a custom useIdle React Hook | Vid11-Detect-user-Activity-w-custom-useIdle-Hook |
 
 ![Preview](/public/vid11.png)
+---
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 12      | Prevent Unnecessary Component Rerenders with React memo | Vid12-Prevent-Unnecessary-Comp-Rerenders-w-React-Memo |
 
+![Preview](/public/vid12.png)
 
 
 
