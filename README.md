@@ -64,6 +64,12 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 | 10 (x2 Stopwatches)      | Share Complex Logic across React Components with Custom Hooks | Vid10-ShareComplexLogic-across-Compnts-w-Custom-Hooks |
 
 ![Preview](/public/vid10.png)
+---
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 11      | Detect user activity with a custom useIdle React Hook | Vid11-Detect-user-Activity-w-custom-useIdle-Hook |
+
+![Preview](/public/vid11.png)
 
 
 
