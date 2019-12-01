@@ -76,6 +76,12 @@ https://egghead.io/playlists/react-hooks-and-suspense-650307f2
 | 12      | Prevent Unnecessary Component Rerenders with React memo | Vid12-Prevent-Unnecessary-Comp-Rerenders-w-React-Memo |
 
 ![Preview](/public/vid12.png)
+---
+| Number | Video Name                              |  Branch
+| -------| ------------------------------          | ---------------------------      | 
+| 13 (revisit VanillaTilt)      | Lazy Load a React Component with React.lazy and Suspense | Vid13-LazyLoad-Comp-w-ReactLazy-and-Suspense |
+
+![Preview](/public/vid13.png)
 
 
 
