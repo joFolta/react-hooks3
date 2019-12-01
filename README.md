@@ -3,6 +3,10 @@
 ![Preview](/public/preview.png)
 
 ### Learn fundamentals of React Suspense
+##### Suspense wrapper with fallback "loading..."
+##### THROW promise; React find closest Suspense and uses its fallback. When promise is resolved, Suspense will rerender its children
+###### Cache to keep track of pokemon already loaded
+
 
 **NOTE: projects separated by branches off master**
 

@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+// bring in Suspense (to handle asynchrony)
+import React, { useState, Suspense } from "react";
 import fetchPokemon from "./fetch-pokemon";
 
+// Cache to keep track of pokemon already loaded
 const cache = {};
 
 function PokemonInfo({ pokemonName }) {
   const pokemon = cache[pokemonName];
-  return <pre>{JSON.stringify(pokemon || "Unknown", null, "___")}</pre>;
+  // THROW promise; React find closest Suspense and uses its fallback. When promise is resolved, Suspense will rerender its children
+  if (!pokemon) {
+    const promise = fetchPokemon(pokemonName).then(
+      p => (cache[pokemonName] = p)
+    );
+    console.log("cache", cache);
+    throw promise;
+  }
+  return <pre>{JSON.stringify(pokemon || "Unknown", null, 2)}</pre>; //<pre/> preformatted html, preserves the whitespace
 }
 
 function App() {
@@ -22,7 +32,12 @@ function App() {
         <button type="submit">Submit</button>
       </form>
       <div>
-        {pokemonName ? <PokemonInfo pokemonName={pokemonName} /> : null}
+        {pokemonName ? (
+          // Suspense wrapper with fallback "loading..."
+          <Suspense fallback={<div>loading...</div>}>
+            <PokemonInfo pokemonName={pokemonName} />
+          </Suspense>
+        ) : null}
       </div>
     </div>
   );
